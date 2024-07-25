@@ -1,0 +1,25 @@
+.bigline {
+    width: 12px;
+    height: 400px;
+    background: linear-gradient(2deg, rgb(228, 227, 235), rgb(230, 228, 237), rgb(67, 61, 139), rgb(65, 30, 118), rgb(131, 180, 255), rgb(67, 61, 139), rgb(117, 16, 160));
+    animation: ani 2s infinite linear;
+    position: relative;
+    left: 16%;
+    top: -3.5%;
+    border-radius: 6px;
+    background-size: 200% 200%; 
+    filter: blur(1px);/* Ensure this matches your animation */
+  }
+  
+  @keyframes ani {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 100% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  

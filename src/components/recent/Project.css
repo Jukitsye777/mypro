@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.projectcontainer{
+    position: relative;
+    background: black;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: fit-content;
+    gap: 70px;
+    left: 22.5%;
+    top: -1%;
+
+
+}
+.projectcard{
+    position: relative;
+    place-items: center;
+    width: 390px;
+    height: 470px;
+    background: black;
+    border-radius: 29px;
+    border: 1px solid white;
+    transition: transform 1.5s;
+}
+.projectcard h1{
+    font-family: 'Poppins';
+    font-weight: 600;
+    left: 7%;
+    top: 6%;
+    position: relative;
+    font-size: 1.5em;
+    color: white;
+
+
+}
+.projectcard p{
+    font-family: 'Poppins';
+    font-weight: 400;
+    top: 8%;
+    position: relative;
+    left:7%;
+    color: white;
+    width: 370px;
+    
+}
+.projectcard .img{
+    position: relative;
+    width: 350px;
+    height: 200px;
+    left: 5.5%;
+    top: 3.5%;
+    border-radius: 22px;
+   
+background: #e0e0e0;
+box-shadow:  6px -6px 6px #5d5a5a,
+             -6px 6px 20px  #5d5a5a;
+}
+.projectcard .proliner{
+    position: relative;
+    height: 4px;
+    left: 7%;
+    width: 33%;
+    background-color: rgb(63, 162, 246);
+    top: 5%;
+}
+
+.projectcard .but{
+
+    position: relative;
+    color: rgb(6, 6, 6);
+    border-color: white;
+    font-weight: 600;
+    background: white;
+    left: 71%;
+    top: 3%;
+}
+.projectcard .but .gitimg{
+    width: 30px;
+    position: relative;
+}
+
+.projectcard:hover{
+    transform: scale(1.1,1.1);
+    transition: transform 1.5s;
+}
+.projectcontainer:hover > .projectcard:not(:hover){
+    filter:blur(5px);
+    transform : scale(0.9,0.9);
+    transition: transform 1.5;
+    
+}

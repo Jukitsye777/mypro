@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.followwrapper{
+    position: relative;
+    width: 1535px;
+    height: 306px;
+    
+    top: 0%;
+    overflow: hidden;
+}
+
+.followcontainer{
+    position: relative;
+    width: 1500px;
+    height: 200px;
+    background-color: black;
+    top: 50px;
+    left: 2px ;
+    border-radius: 22px;
+}
+
+.followglow {
+    position: absolute;
+    top: 48px;
+    
+    width: 100%;
+    height: 100%;
+    background-size: 400%; 
+    border-radius: 22px;/* Ensure the background size matches your animation */
+    overflow: hidden;
+    
+}
+
+.followglow::before, .followglow::after{
+    position: absolute;
+    content: '';
+    width: 1504px;
+    height: 209px;
+    background: linear-gradient(78deg, rgb(225, 6, 32), rgb(36, 13, 170), rgb(19, 139, 4), rgb(135, 6, 109), rgb(131, 180, 255), rgb(67, 61, 139),rgb(171, 173, 24));
+    background-size: 300%; /* Ensure the background size matches your animation */
+    animation: followglower 17s linear infinite;
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+@keyframes followglower{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+
+.followglow::after{
+    filter: blur(30px);
+}
+
+.followcontainer .followcard{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    left: 83%;
+    top: -14%;
+
+}
+.followcontainer .followcard .icon1{
+    position: relative;
+   
+    background: white;
+}
+
+.followcontainer .followheading{
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 200;
+    font-size: 1.2em;
+    left: 86%;
+    position: relative;
+    top:-16%;
+}
+.followcontainer .followheading span{
+    color: blue;
+   
+}
+.followcontainer .followheading2{
+    font-family: 'Poppins';
+    font-size: 1.2em;
+    position: relative;
+    font-weight: 200;
+    color: white;
+    left: 1%;
+    top: 20%;
+
+
+}
+.followcontainer .followheading2 span{
+  
+    color: green;
+    
+}
+.followcontainer .butfollow{
+    position: relative;
+    left: 3%;
+    top: 20%;
+}
+.followcontainer .anima{
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+
+
+
+
+
+
+
+.followjoin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-size: 3.5em;
+  position: relative;
+  color: transparent; /* Make the text color transparent */
+  background: linear-gradient(78deg, rgb(228, 227, 235), rgb(230, 228, 237), rgb(67, 61, 139), rgb(65, 30, 118), rgb(131, 180, 255), rgb(67, 61, 139), rgb(117, 16, 160));
+  background-size: 200% auto; /* Adjust the background size to be larger than the text */
+  -webkit-background-clip: text; /* Safari/Chrome */
+  background-clip: text; /* Standard */
+  filter: 
+    drop-shadow(0 0 10px rgba(0, 0, 0, 0.7))  /* Soft glow */
+    drop-shadow(0 0 20px rgba(0, 0, 0, 0.5))  /* Larger, more intense glow */
+    drop-shadow(0 0 30px rgba(0, 0, 0, 0.4));
+  animation: glower 10s infinite linear; /* Use a linear timing function for smooth animation */
+}
+
+.followbig {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  top: 5%;
+  left: 3%;
+  display: inline-block;
+  background: none;
+   /* Remove the gradient from the container */
+}
+
+@keyframes glower {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 100% 0; /* Move the background to the end */
+  }
+  100% {
+    background-position: 0 0; /* Move the background back to the start */
+  }
+}
+
+
+
+ .copyright{
+    color: white;
+    font-family: 'Poppins';
+    font-weight: 200;
+    font-size: 1em;
+    position: relative;
+    top: 0%;
+    left: 43%;
+    width: fit-content;
+}

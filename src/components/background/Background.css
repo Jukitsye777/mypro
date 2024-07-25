@@ -1,0 +1,15 @@
+
+
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: violet;
+    transform-origin: 0%;
+  }
+  .background{
+    background-color: black;
+  }
+  

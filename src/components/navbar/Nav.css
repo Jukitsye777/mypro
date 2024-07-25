@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
+.navcontainer{
+    width: 900px;
+    
+}
+ .wrappernav{
+    position: relative;
+    
+ }
+
+
+.cardcontainernav {
+
+    width: 95px;
+    height: 50px;
+    border-radius: 12px;
+    position: relative;
+    background: black;
+    opacity: 87%;
+    padding: 10px;
+    border-radius:25px;
+    top: 1px;
+    bottom: 6px;
+
+  }
+
+  .glower{
+
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+  }
+
+
+  .glower::before,.glower::after {
+    position: absolute;
+    content: '';
+  
+    background: linear-gradient(78deg, rgb(23, 21, 59), rgb(46, 35, 108), rgb(67, 61, 139), rgb(200, 172, 214), rgb(131, 180, 255), rgb(67, 61, 139),rgb(23, 21, 59));
+    background-size: 300%;
+    width: 97px;
+    height: 54px;
+    border-radius: 25px;
+    animation: animate 20s linear infinite;
+  }
+
+  
+  @keyframes animate{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+  }
+
+  .glower::after{
+    filter: blur(4px);
+  }
+ 
+
+  .linkname{
+    font-family: 'Poppins';
+    font-weight: 450;
+    
+  }
+
+  .nava{
+    
+    background-color: black;
+  }
+  .navcontent{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+
+  @media (max-width:480px){
+    .navcontainer{
+      width: 100px;
+
+
+    }
+  }

@@ -1,0 +1,43 @@
+.buttoncontainer {
+  position: relative;
+  top:18%;
+  left: 48.5%;
+  transform: translateX(-50%);
+  font-weight: 900;
+  height: fit-content;
+  width: fit-content;
+  color: #ffffff;
+  border-radius: 12px;
+  background: rgb(175, 71, 210);
+}
+
+
+
+
+button {
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: 500;
+  color: white;
+  text-shadow: none;
+  background: black;
+  cursor: pointer;
+  box-shadow: transparent;
+  border: 1px solid #ffffff80;
+  transition: all 1s ease-in-out;
+  user-select: none;
+}
+
+
+
+button:hover,
+button:focus {
+  transition: 0.4s;
+  
+  color: #ffffff;
+  background: rgb(175, 71, 210);
+  border: 1px solid rgb(175, 71, 210);
+  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+  box-shadow: 0 0 12px rgb(175, 71, 210), 0 0 20px rgb(175, 71, 210), 0 0 45px rgb(175, 71, 210), 0 0 100px rgb(175, 71, 210);
+}

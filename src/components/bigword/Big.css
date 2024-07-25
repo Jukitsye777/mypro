@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.bigcontainer{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    top: 16.5%;
+    left: 19%;
+    filter: blur(1px);
+}
+.big{
+    font-size: 3.5em;
+    font-family: 'Poppins';
+    position: relative;
+    color: transparent; /* Make the text color transparent */
+  background: linear-gradient(78deg, rgb(228, 227, 235), rgb(230, 228, 237), rgb(67, 61, 139), rgb(65, 30, 118), rgb(131, 180, 255), rgb(67, 61, 139), rgb(117, 16, 160));
+  background-size: 200% auto; /* Adjust the background size to be larger than the text */
+  -webkit-background-clip: text; /* Safari/Chrome */
+  background-clip: text; /* Standard */
+  filter: 
+    drop-shadow(0 0 10px rgba(0, 0, 0, 0.7))  /* Soft glow */
+    drop-shadow(0 0 20px rgba(0, 0, 0, 0.5))  /* Larger, more intense glow */
+    drop-shadow(0 0 30px rgba(0, 0, 0, 0.4));
+  animation: glower 10s infinite linear; 
+
+}
+  .bigcontainer span{
+    font-size: 3.5em;
+    font-family: 'Poppins';
+    position: relative;
+    top: -10%;
+    color: transparent;
+    background: linear-gradient(78deg, rgb(228, 227, 235), rgb(230, 228, 237), rgb(67, 61, 139), rgb(65, 30, 118), rgb(131, 180, 255), rgb(67, 61, 139), rgb(117, 16, 160));
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+      filter: 
+    drop-shadow(0 0 10px rgba(0, 0, 0, 0.7))  /* Soft glow */
+    drop-shadow(0 0 20px rgba(0, 0, 0, 0.5))  /* Larger, more intense glow */
+    drop-shadow(0 0 30px rgba(0, 0, 0, 0.4));
+   
+}
+
+
+@keyframes glower {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 100% 0; /* Move the background to the end */
+    }
+    100% {
+      background-position: 0 0; /* Move the background back to the start */
+    }
+  }
+
+
+
+ 
+  
+  
